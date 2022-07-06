@@ -3,7 +3,6 @@ import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
 const { REACT_APP_ENV } = process.env
-
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
