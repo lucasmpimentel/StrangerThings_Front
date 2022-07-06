@@ -2,7 +2,7 @@ import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
-const REACT_APP_ENV = process.env.REACT_APP_ENV === 'dev'
+const REACT_APP_ENV = process.env.REACT_APP_ENV === 'dev';
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -115,7 +115,7 @@ class StrangerThings extends React.Component {
         )}` }
       >
         <div className="content strangerfy">
-        { REACT_APP_ENV ? <q>Em desenvolvimento</q> : null }
+          { REACT_APP_ENV ? <q>Em desenvolvimento</q> : null }
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
               {' '}
